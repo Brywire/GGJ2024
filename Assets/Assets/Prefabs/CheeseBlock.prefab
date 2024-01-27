@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7229316393427692172}
   - component: {fileID: 7229316393427692173}
   - component: {fileID: 7229316393427692168}
+  - component: {fileID: 4297529959176642979}
   m_Layer: 0
   m_Name: CheeseBlock
-  m_TagString: Untagged
+  m_TagString: CheeseBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +95,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7229316393427692174}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2.0000002}
@@ -130,5 +131,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f59e3522e72af19479fe8a541d300e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4297529959176642979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7229316393427692174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88756844fc56344a83c6fd75aaf384a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
