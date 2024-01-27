@@ -438,9 +438,12 @@ GameObject:
   - component: {fileID: 3379676212830537070}
   - component: {fileID: 1940274713861336045}
   - component: {fileID: 1971165062902217676}
-  m_Layer: 0
+  - component: {fileID: 3379676212830537072}
+  - component: {fileID: 3379676212830537071}
+  - component: {fileID: 3379676212830537073}
+  m_Layer: 6
   m_Name: Cylinder.018
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -456,9 +459,12 @@ GameObject:
   - component: {fileID: 8670761335838735542}
   - component: {fileID: 3127129692181602286}
   - component: {fileID: 2320798170825307928}
-  m_Layer: 0
+  - component: {fileID: 8670761335838735545}
+  - component: {fileID: 8670761335838735544}
+  - component: {fileID: 8670761335838735543}
+  m_Layer: 6
   m_Name: Cylinder.004
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -795,9 +801,12 @@ GameObject:
   - component: {fileID: 2660640662055660179}
   - component: {fileID: 1264384251412370599}
   - component: {fileID: 6148596154511363799}
-  m_Layer: 0
+  - component: {fileID: 6148596154511363802}
+  - component: {fileID: 6148596154511363801}
+  - component: {fileID: 6148596154511363800}
+  m_Layer: 6
   m_Name: Cylinder.013
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -828,9 +837,12 @@ GameObject:
   - component: {fileID: 8946660040441202056}
   - component: {fileID: 4829784951199729167}
   - component: {fileID: 6944656104484953413}
-  m_Layer: 0
+  - component: {fileID: 8946660040441202059}
+  - component: {fileID: 8946660040441202058}
+  - component: {fileID: 8946660040441202057}
+  m_Layer: 6
   m_Name: Cylinder.005
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -903,9 +915,12 @@ GameObject:
   - component: {fileID: 6614996720205450781}
   - component: {fileID: 5341121481892572234}
   - component: {fileID: 7934638894306784149}
-  m_Layer: 0
+  - component: {fileID: 7934638894306784152}
+  - component: {fileID: 7934638894306784151}
+  - component: {fileID: 7934638894306784150}
+  m_Layer: 6
   m_Name: Cylinder.015
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,6 +1031,47 @@ Transform:
   m_Father: {fileID: 1121913625}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3379676212830537071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840247478564363026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &3379676212830537072
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840247478564363026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3379676212830537073
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840247478564363026}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3655000508897939821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,9 +1103,10 @@ GameObject:
   - component: {fileID: 4505331245086819697}
   - component: {fileID: 6426448319585222515}
   - component: {fileID: 6426448319585222516}
-  m_Layer: 0
+  - component: {fileID: 6426448319585222517}
+  m_Layer: 6
   m_Name: Cylinder.008
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1103,9 +1160,12 @@ GameObject:
   - component: {fileID: 6732398567489977612}
   - component: {fileID: 6816842339668425101}
   - component: {fileID: 1746654309301793596}
-  m_Layer: 0
+  - component: {fileID: 6816842339668425104}
+  - component: {fileID: 6816842339668425103}
+  - component: {fileID: 6816842339668425102}
+  m_Layer: 6
   m_Name: Cylinder.006
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,9 +1219,12 @@ GameObject:
   - component: {fileID: 8218352543204683824}
   - component: {fileID: 8189099295801370287}
   - component: {fileID: 1834477639628616955}
-  m_Layer: 0
+  - component: {fileID: 8218352543204683827}
+  - component: {fileID: 8218352543204683826}
+  - component: {fileID: 8218352543204683825}
+  m_Layer: 6
   m_Name: Cylinder.011
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1177,9 +1240,12 @@ GameObject:
   - component: {fileID: 2892267968292899197}
   - component: {fileID: 1957042998263000895}
   - component: {fileID: 9129727725799270883}
-  m_Layer: 0
+  - component: {fileID: 9129727725799270886}
+  - component: {fileID: 9129727725799270885}
+  - component: {fileID: 9129727725799270884}
+  m_Layer: 6
   m_Name: Cylinder.014
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1367,9 +1433,12 @@ GameObject:
   - component: {fileID: 3732820751827520659}
   - component: {fileID: 6768739086855429555}
   - component: {fileID: 7743480365405441677}
-  m_Layer: 0
+  - component: {fileID: 7743480365405441680}
+  - component: {fileID: 7743480365405441679}
+  - component: {fileID: 7743480365405441678}
+  m_Layer: 6
   m_Name: Cylinder.010
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1409,9 +1478,12 @@ GameObject:
   - component: {fileID: 6918000420052102819}
   - component: {fileID: 1241056287668672626}
   - component: {fileID: 876150829679519574}
-  m_Layer: 0
+  - component: {fileID: 6918000420052102821}
+  - component: {fileID: 6918000420052102820}
+  - component: {fileID: 6918000420052102822}
+  m_Layer: 6
   m_Name: Cylinder.017
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1532,6 +1604,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6148596154511363800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2646134610844693304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &6148596154511363801
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2646134610844693304}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &6148596154511363802
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2646134610844693304}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.91
+  m_Center: {x: 0, y: 0.32, z: 0}
 --- !u!1 &6290373544345822116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,8 +1749,20 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.62
-  m_Center: {x: -0.2, y: -1.1031352, z: 0.77187085}
+  m_Radius: 0.89
+  m_Center: {x: 0.51, y: -0.01, z: -0.9}
+--- !u!114 &6426448319585222517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676624720148188817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6512510687126451787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,9 +1774,12 @@ GameObject:
   - component: {fileID: 5993847949077261219}
   - component: {fileID: 8777296174620538680}
   - component: {fileID: 8089062575437602398}
-  m_Layer: 0
+  - component: {fileID: 8777296174620538683}
+  - component: {fileID: 8777296174620538682}
+  - component: {fileID: 8777296174620538681}
+  m_Layer: 6
   m_Name: Cylinder.007
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1740,6 +1868,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3849762625091106629}
   m_Mesh: {fileID: -125435165217083709, guid: 2121a39ad00116141975c495dc0cd844, type: 3}
+--- !u!54 &6816842339668425102
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849762625091106629}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &6816842339668425103
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849762625091106629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.8
+  m_Center: {x: -0.07, y: 0.14, z: 0}
+--- !u!114 &6816842339668425104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849762625091106629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &6829333092130691535
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1797,6 +1966,47 @@ Transform:
   m_Father: {fileID: 1121913625}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6918000420052102820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424774324614619744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &6918000420052102821
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424774324614619744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.97
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6918000420052102822
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424774324614619744}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6919683765480993589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,13 +2018,70 @@ GameObject:
   - component: {fileID: 3924232459460341351}
   - component: {fileID: 3763447768885632209}
   - component: {fileID: 3280927519239305843}
-  m_Layer: 0
+  - component: {fileID: 6919683765480993593}
+  - component: {fileID: 6919683765480993592}
+  - component: {fileID: 6919683765480993591}
+  - component: {fileID: 6919683765480993590}
+  m_Layer: 6
   m_Name: Cylinder.009
-  m_TagString: Untagged
+  m_TagString: PizzaSlice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6919683765480993590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919683765480993589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &6919683765480993591
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919683765480993589}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &6919683765480993592
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919683765480993589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.76
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6919683765480993593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919683765480993589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &6944656104484953413
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2006,7 +2273,7 @@ MonoBehaviour:
   rotationSpeed: 90
   rotationAmount: 90
   moveSpeed: 5
-  rotationPauseTime: 1
+  rotationPauseTime: 20
 --- !u!54 &7539264238846513711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2065,6 +2332,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7743480365405441678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5245042009364040790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &7743480365405441679
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5245042009364040790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.81
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7743480365405441680
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5245042009364040790}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!33 &7754171747008917000
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2199,6 +2507,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7934638894306784150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971542038136832708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &7934638894306784151
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971542038136832708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.94
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7934638894306784152
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971542038136832708}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &8089062575437602398
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2324,6 +2673,47 @@ Transform:
   m_Father: {fileID: 1121913625}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8218352543204683825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160148092647299673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &8218352543204683826
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160148092647299673}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &8218352543204683827
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160148092647299673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.91
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8513859188437073502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,8 +2774,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.09
-  m_Center: {x: -1.13, y: 3.09, z: -2.33}
+  m_Radius: 0.8
+  m_Center: {x: 0.18, y: 0.18, z: 0}
 --- !u!33 &8591189834399947448
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2424,6 +2814,47 @@ Transform:
   m_Father: {fileID: 1121913625}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &8670761335838735543
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843214210077227799}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &8670761335838735544
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843214210077227799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.98
+  m_Center: {x: -0.45, y: 0.66, z: 0}
+--- !u!114 &8670761335838735545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843214210077227799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8700725329137318011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,8 +2915,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.83
-  m_Center: {x: 0.68, y: -0.61, z: 0.81}
+  m_Radius: 1.26
+  m_Center: {x: -0.48, y: 0.13, z: 0}
 --- !u!1 &8707273951331983229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,6 +3034,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6512510687126451787}
   m_Mesh: {fileID: 3163171260390484736, guid: 2121a39ad00116141975c495dc0cd844, type: 3}
+--- !u!135 &8777296174620538681
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6512510687126451787}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.68
+  m_Center: {x: 0.06, y: 0.15, z: 0}
+--- !u!54 &8777296174620538682
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6512510687126451787}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &8777296174620538683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6512510687126451787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8946660040441202056
 Transform:
   m_ObjectHideFlags: 0
@@ -2618,6 +3090,47 @@ Transform:
   m_Father: {fileID: 1121913625}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &8946660040441202057
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800250517539640690}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &8946660040441202058
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800250517539640690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.83
+  m_Center: {x: -0.07, y: -0.15, z: 0}
+--- !u!114 &8946660040441202059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800250517539640690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &9129727725799270883
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2660,6 +3173,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9129727725799270884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4214726984673393932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e01a8a61d7da34d81fcf4a166737b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &9129727725799270885
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4214726984673393932}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &9129727725799270886
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4214726984673393932}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.95
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &9179017851954926682
 Transform:
   m_ObjectHideFlags: 0
@@ -2722,5 +3276,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.96
-  m_Center: {x: -0.05, y: 1.59, z: -1.3626362}
+  m_Radius: 0.66
+  m_Center: {x: -0.05, y: 0.77, z: 0}
