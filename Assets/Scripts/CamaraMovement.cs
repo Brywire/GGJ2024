@@ -19,6 +19,9 @@ public class CamaraMovement : MonoBehaviour
     [SerializeField]
     private float returnSpeed;
 
+    [SerializeField]
+    Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +40,20 @@ public class CamaraMovement : MonoBehaviour
         {
             Shake();
         }
+        if (Input.GetMouseButtonDown(1)) 
+        {
+            Zoom();
+        }
     }
 
     public void Shake()
     {
         newRotation += new Vector3(recoilX, Random.Range(-recoilY, recoilY), Random.Range(-recoilZ, recoilZ));
+    }
+
+    public void Zoom() 
+    {
+        animator.Play("CameraZoom");
     }
 
 
