@@ -8,14 +8,12 @@ public class CheeseSpawner : MonoBehaviour
 	[SerializeField] private GameObject spawnArea;
 	[SerializeField] private float minX, maxX, minZ, maxZ;
 	[SerializeField] private float noSpawnRadius;
+	private float spawnInterval = 10f; // Stel hier de gewenste interval in seconden in
 
-	// Update is called once per frame
-	void Update()
-    {
-		if (Input.GetKeyDown("space"))
-		{
-			SpawnObject();
-		}
+	void Start()
+	{
+		// Start SpawnObject met een vertraging en herhaal dit elke spawnInterval seconden
+		InvokeRepeating("SpawnObject", 2f, spawnInterval);
 	}
 
 
