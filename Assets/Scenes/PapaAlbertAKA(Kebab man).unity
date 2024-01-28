@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 46501310}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -558,7 +558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184667552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9100003, y: -1.44, z: 2.8000002}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -576,9 +576,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 1.9809377
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.85134757, z: 0}
 --- !u!1 &233122404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5245042011116262203, guid: 2121a39ad00116141975c495dc0cd844, type: 3}
@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 362620698}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1026,9 +1026,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 789320099}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7318ce95391d0d1499b37d2ef688c97a, type: 3}
+  m_Script: {fileID: 11500000, guid: 839c7f42fe5e73a42abc1742b638cf9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityPrefab: {fileID: 0}
 --- !u!1 &822650446 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: 2121a39ad00116141975c495dc0cd844, type: 3}
@@ -1129,9 +1130,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 1.7615366
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.23626637, z: 0}
 --- !u!1 &1265232780 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4214726985332892257, guid: 2121a39ad00116141975c495dc0cd844, type: 3}
@@ -1486,6 +1487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7318ce95391d0d1499b37d2ef688c97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityPrefab: {fileID: 0}
 --- !u!1 &1998417424
 GameObject:
   m_ObjectHideFlags: 0
