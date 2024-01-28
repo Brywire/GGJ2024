@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class AbilityScript : MonoBehaviour
+public class P2AbilityScript : MonoBehaviour
 {
 	bool abilityCheck = false;
 	bool abilityActivated = false;
@@ -24,7 +24,7 @@ public class AbilityScript : MonoBehaviour
 		// Check if the ability is activated and handle activation logic
 		if (abilityCheck && !abilityActivated)
 		{
-			if (Input.GetKeyDown(KeyCode.E) && cooldownTimer <= 0f) // Change Y to the desired activation key
+			if (Input.GetKeyDown(KeyCode.LeftControl) && cooldownTimer <= 0f)
 			{
 				ActivateAbility();
 			}

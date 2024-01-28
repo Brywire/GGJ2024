@@ -2105,6 +2105,7 @@ GameObject:
   - component: {fileID: 7539264238846513710}
   - component: {fileID: 7539264238846513711}
   - component: {fileID: 7539264238846513712}
+  - component: {fileID: 7539264238846513713}
   m_Layer: 6
   m_Name: Arm
   m_TagString: Untagged
@@ -2717,10 +2718,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a0c10d055cb004c8336da3b77994a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 90
+  rotationSpeed: 100
   rotationAmount: 90
   moveSpeed: 5
-  rotationPauseTime: 12
+  rotationPauseTime: 2
 --- !u!54 &7539264238846513711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2758,6 +2759,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &7539264238846513713
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6290373544345822116}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 96726733dd7a0804a862e92594cdd2cd, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!23 &7743480365405441677
 MeshRenderer:
   m_ObjectHideFlags: 0
