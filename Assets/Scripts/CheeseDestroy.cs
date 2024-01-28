@@ -6,7 +6,7 @@ public class CheeseDestroy : MonoBehaviour
 {
 	void OnTriggerEnter(Collider col)
 	{
-		//Detect collision of the player bullet with an enemy ship
+		//Detect collision of the player with a CheeseBlock
 		if (col.tag == "Player")
 		{
 			Destroy(gameObject);
