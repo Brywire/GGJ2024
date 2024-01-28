@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CamaraMovement : MonoBehaviour
 {
+    private Vector3 initialRotation;
     private Vector3 curRotation;
     private Vector3 newRotation;
 
@@ -22,17 +23,19 @@ public class CamaraMovement : MonoBehaviour
     [SerializeField]
     Animator animator;
 
-
     // Start is called before the first frame update
     void Start()
     {
-
+        // Store the initial rotation
+        initialRotation = transform.localRotation.eulerAngles;
+        curRotation = initialRotation;
+        newRotation = initialRotation;
     }
 
     // Update is called once per frame
     void Update()
     {
-        newRotation = Vector3.Lerp(newRotation, Vector3.zero, returnSpeed * Time.deltaTime);
+        newRotation = Vector3.Lerp(newRotation, initialRotation, returnSpeed * Time.deltaTime);
         curRotation = Vector3.Slerp(curRotation, newRotation, smoothness * Time.fixedDeltaTime);
         transform.localRotation = Quaternion.Euler(curRotation);
 
@@ -40,7 +43,7 @@ public class CamaraMovement : MonoBehaviour
         {
             Shake();
         }
-        if (Input.GetMouseButtonDown(1)) 
+        if (Input.GetMouseButtonDown(1))
         {
             Zoom();
         }
@@ -51,11 +54,8 @@ public class CamaraMovement : MonoBehaviour
         newRotation += new Vector3(recoilX, Random.Range(-recoilY, recoilY), Random.Range(-recoilZ, recoilZ));
     }
 
-    public void Zoom() 
+    public void Zoom()
     {
         animator.Play("CameraZoom");
     }
-
-
-
 }

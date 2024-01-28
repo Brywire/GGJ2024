@@ -7,6 +7,8 @@ public class ArmRotait : MonoBehaviour
     public float rotationAmount = 90f;  // Amount of rotation in degrees
     public float moveSpeed = 5f;
     public float rotationPauseTime = 2f; // Time to pause after rotation in seconds
+    
+    Vector3 initialRotation;
 
     private bool isRotating = false;
     private float timeSinceLastRotation = 0f;
@@ -16,6 +18,7 @@ public class ArmRotait : MonoBehaviour
     {
         // Store the initial rotation of the arm
         startRotation = transform.rotation;
+        initialRotation = transform.localRotation.eulerAngles;
     }
 
     void Update()
