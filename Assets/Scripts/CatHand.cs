@@ -3,33 +3,21 @@ using UnityEngine;
 
 public class CatHand : MonoBehaviour
 {
-    public float hitInterval = 2f;      // Time between each hit
-    public float hitForce = 10f;        // Force to apply when hitting the ground
-    public float cooldownDuration = 2f; // Cooldown period after a successful hit
-    public LayerMask hitLayer;          // Layer to detect for hitting the ground
+    public float hitInterval = 2f;  // Time between each hit
+    public float hitForce = 10f;    // Force to apply when hitting the ground
+    public LayerMask hitLayer;      // Layer to detect for hitting the ground
 
     private float timer;
-    private Collider handCollider;
-    private bool canHit = true;
-
-    void Start()
-    {
-        // Get the Collider component of the hand
-        handCollider = GetComponent<Collider>();
-    }
 
     void Update()
     {
-        if (canHit)
-        {
-            timer += Time.deltaTime;
+        timer += Time.deltaTime;
 
-            // Check if it's time to hit the ground
-            if (timer >= hitInterval)
-            {
-                HitGround();
-                timer = 0f; // Reset the timer
-            }
+        // Check if it's time to hit the ground
+        if (timer >= hitInterval)
+        {
+            HitGround();
+            timer = 0f; // Reset the timer
         }
     }
 
@@ -43,29 +31,19 @@ public class CatHand : MonoBehaviour
             Rigidbody hitRigidbody = hit.collider.GetComponent<Rigidbody>();
             if (hitRigidbody != null)
             {
-                hitRigidbody.AddForce(Vector3.down * hitForce);
+                hitRigidbody.AddForce(Vector3.down * hitForce, ForceMode.Impulse);
 
-                // Disable the collider for a certain duration
-                StartCoroutine(DisableColliderForDuration(cooldownDuration));
+                // Disable the collider of the ground
+                Collider groundCollider = hit.collider.GetComponent<Collider>();
+                if (groundCollider != null)
+                {
+                    // Option 1: Disable the collider (recommended if you might re-enable it later)
+                    groundCollider.enabled = false;
+
+                    // Option 2: Destroy the collider (use with caution, cannot be undone)
+                    // Destroy(groundCollider);
+                }
             }
         }
-    }
-
-    IEnumerator DisableColliderForDuration(float duration)
-    {
-        // Disable the collider
-        handCollider.enabled = false;
-
-        // Set canHit to false during the cooldown
-        canHit = false;
-
-        // Wait for the specified duration
-        yield return new WaitForSeconds(duration);
-
-        // Enable the collider again
-        handCollider.enabled = true;
-
-        // Allow the hand to hit again
-        canHit = true;
     }
 }
