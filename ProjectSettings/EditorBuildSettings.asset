@@ -4,11 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Bashir.unity
-    guid: 2e60c2ab6c92d8a44adec392517313d7
-  - enabled: 1
-    path: Assets/Scenes/Mo.unity
-    guid: 24991b406b2ca4c49a7041be3b4c4824
+  m_Scenes: []
   m_configObjects: {}
