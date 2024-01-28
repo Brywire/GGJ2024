@@ -24,7 +24,7 @@ public class AbilityScript : MonoBehaviour
 		// Check if the ability is activated and handle activation logic
 		if (abilityCheck && !abilityActivated)
 		{
-			if (Input.GetKeyDown(KeyCode.E) && cooldownTimer <= 0f) // Change Y to the desired activation key
+			if (Input.GetKeyDown(KeyCode.E) && cooldownTimer <= 0f) 
 			{
 				ActivateAbility();
 			}
@@ -48,6 +48,6 @@ public class AbilityScript : MonoBehaviour
 		// Start the cooldown timer
 		cooldownTimer = abilityCooldown;
 
-		// You can also add other logic here, such as disabling the CheeseBlock or anything else related to the ability activation.
+	
 	}
 }
