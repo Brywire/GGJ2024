@@ -6,6 +6,7 @@ public class ChocobarSpawn : MonoBehaviour
 {
 
     bool Ifhit = false;
+    bool Ifhit2 = false;
     // Define the force to shoot the player away
     public float m_Thrust = 9999f;
     public Rigidbody Player1;
@@ -24,6 +25,11 @@ public class ChocobarSpawn : MonoBehaviour
             Debug.Log("Moi em");        
             Ifhit= true;
         }
+        if (col.gameObject.tag == "Player2")
+        {
+            Debug.Log("Moi em");
+            Ifhit2 = true;
+        }
     }
 
     private void Update()
@@ -31,6 +37,9 @@ public class ChocobarSpawn : MonoBehaviour
         if (Ifhit == true) 
         {
             Player1.AddForce(chocobar.forward * m_Thrust, ForceMode.Impulse);
+        }
+        if (Ifhit2 == true)
+        {
             Player2.AddForce(chocobar.forward * m_Thrust, ForceMode.Impulse);
         }
     }
