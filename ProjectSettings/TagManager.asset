@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - CheeseBlock
+  - Player2
+  - PizzaSlice
   layers:
   - Default
   - TransparentFX
