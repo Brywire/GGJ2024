@@ -43,7 +43,7 @@ public class ArmRotait : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationStep);
 
             // Debug: Print current rotation during each frame
-            Debug.Log("Current Rotation: " + transform.rotation.eulerAngles.z);
+           // Debug.Log("Current Rotation: " + transform.rotation.eulerAngles.z);
         }
     }
 
