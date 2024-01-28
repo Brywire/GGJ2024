@@ -35,21 +35,30 @@ public class CatHand : MonoBehaviour
 
     void HitGround()
     {
-        // Raycast to check if there's something to hit
         RaycastHit hit;
+
+        // Cast a ray from the hand's position towards the mesh collider of the pizza slice
         if (Physics.Raycast(transform.position, Vector3.down, out hit, Mathf.Infinity, hitLayer))
         {
-            // Apply force to the object hit
-            Rigidbody hitRigidbody = hit.collider.GetComponent<Rigidbody>();
-            if (hitRigidbody != null)
+            // Check if the hit object has the "PizzaSlice" tag
+            if (hit.collider.CompareTag("PizzaSlice"))
             {
-                hitRigidbody.AddForce(Vector3.down * hitForce);
+                // Get the point of contact on the mesh
+                Vector3 hitPoint = hit.point;
 
-                // Disable the collider for a certain duration
-                StartCoroutine(DisableColliderForDuration(cooldownDuration));
+                // Apply force to the specific portion of the pizza slice
+                Rigidbody hitRigidbody = hit.collider.GetComponent<Rigidbody>();
+                if (hitRigidbody != null)
+                {
+                    hitRigidbody.AddForce(Vector3.down * hitForce);
+
+                    // Disable the collider for a certain duration
+                    StartCoroutine(DisableColliderForDuration(cooldownDuration));
+                }
             }
         }
     }
+
 
     IEnumerator DisableColliderForDuration(float duration)
     {

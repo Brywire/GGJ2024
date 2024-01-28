@@ -5,8 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - CheeseBlock
+<<<<<<< Updated upstream
   - Player2
   - PizzaSlice
+=======
+  - PizzaSlice
+  - CatHand
+  - CheeseWheel
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
